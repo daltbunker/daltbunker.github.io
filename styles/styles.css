@@ -1,0 +1,102 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image:linear-gradient(#ffffff,#3a3a3a);
+}
+
+img {
+    height: 50%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    margin: 20px;
+    z-index: -5;
+}
+
+ h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: #3a3a3a;
+ }
+
+ nav {
+     position: sticky;
+     text-align: center;
+     top: 0;
+     height: 35px;
+     background-color: white;
+     padding: 15px;
+     margin: 20px -10px;
+ }
+ nav a {
+    color: #3a3a3a;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 15px
+ }
+
+ nav a:hover {
+     color:rgb(0, 0, 0)
+ }
+
+ .content-item {
+     color: white;
+     padding: 10px;
+     margin: -20px;
+ }
+
+ .content-item h2 {
+     background-image: url("back1.png");
+     text-align: center;
+     text-transform: uppercase;
+     position: relative;
+     padding-top: 4em;
+     height: 100px;
+     z-index: -4;
+ }
+
+ul, ol, table, p, .poem-content {
+    background-color: rgb(49, 49, 49);
+    border-radius: 4px;
+    padding: 30px;
+    margin: 10px;
+}
+
+ol li a {
+    color: rgb(255, 255, 255);
+}
+
+ol li a:hover {
+    font-weight: bold;
+}
+
+table {
+    border: solid 1px gray;
+}
+
+#odd-row {
+    background-color: rgb(216, 216, 216);
+}
+
+#even-row {
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}

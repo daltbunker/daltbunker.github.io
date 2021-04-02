@@ -13,10 +13,11 @@
     <h1>Dalton Bunker</h1>
     <img src="images/main.jpeg" alt="profile picture">
     <nav>
+        <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="#">Poem</a>
-        <a href="#">Books</a>
-        <a href="#">Classes</a>
+        <a href="#">Poems & Books</a>
+        <a href="#">Interests</a>
+        <a href="#">Schedule</a>
     </nav>
     <div class="main-content">
         <div class="content-item">
@@ -33,7 +34,6 @@
             <ol>
                 <li><i>Green Lights, </i><a href="https://greenlights.com/">Matthew McConaughey</a></li>
                 <li><i>In the Realm of Hungry Ghosts, </i> <a href="https://drgabormate.com/">Gabor Mat&eacute;</a></li>
-                <!-- Change mate 'e' to have acent -->
                 <li><i>The Illustrated Man, </i><a href="https://raybradbury.com/">Ray Bradbury</a></li>
                 <li><i>The Alchemist, </i><a href="https://paulocoelhoblog.com/">Paulo Coelho</a></li>
                 <li><i>Antifragile, </i><a href="https://www.fooledbyrandomness.com/">Nassim Nicholas Taleb</a></li>
@@ -41,8 +41,10 @@
         </div>
         <div class="content-item">
             <h2>POEM TITLE</h2>
-            <p>poem description</p>
-            <p>Poem Line 1<br>Poem Line 2<br>Poem Line 3</p>
+            <div class="poem-content">
+                <h3>poem description</h3>
+                <p>Poem Line 1<br>Poem Line 2<br>Poem Line 3</p>
+            </div>
         </div>
         <div class="content-item">
             <h2>About Me</h2>
@@ -50,98 +52,102 @@
             <p>p2</p>
             <p>p3</p>
         </div>
-        <table class="content-item" border="1" cellspacing="3" cellpadding="3">
-            <tr>
-                <th></th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </tr>
-            <tr>
-                <td>12:30</td>
-                <td></td>
-                <td rowspan="3" style="background-color: rgb(87, 115, 207);">CS 2550 Web Programming 1 (asynchronous online)</td>
-                <td></td>
-                <td rowspan="3" style="background-color: rgb(87, 115, 207);">CS 2550 Web Programming 1 (asynchronous online)</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>1:00</td>
-                <td rowspan="3" style="background-color: rgb(48, 129, 41);">ECE 3710 Prob and Stat</td>
-                <td></td>
-                <td rowspan="3" style="background-color: rgb(48, 129, 41);">ECE 3710 Prob and Stat</td>
-            </tr>
-            <tr>
-                <td>1:30</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>2:00</td>
-                <td rowspan="3" style="background-color: rgb(206, 94, 94);">CS 2300 Discrete Math</td>
-                <td></td>
-                <td rowspan="3" style="background-color: rgb(206, 94, 94);">CS 2300 Discrete Math</td>
-    
-            </tr>
-            <tr>
-                <td>2:30</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>3:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>3:30</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>4:00</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>4:30</td>
-                <td rowspan="6" style="background-color: rgb(189, 155, 221);">Climbing Practice</td>
-                <td rowspan="6" style="background-color: rgb(189, 155, 221);">Climbing Practice</td>
-                <td rowspan="5" style="background-color: rgb(236, 164, 81);">CS 2420 Intro to Data Stuctures and Algorithms</td>
-                <td></td>
-                <td rowspan="6" style="background-color: rgb(189, 155, 221);">Climbing Practice</td>
-            </tr>
-            <tr>
-                <td>5:00</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>5:30</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>6:00</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>6:30</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>7:00</td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+        <div class="content-item">
+            <h2>Class Schedule</h2>
+            <table class="content-item" border="1" cellspacing="3" cellpadding="3">
+                <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>12:30</td>
+                    <td id="odd-row"></td>
+                    <td rowspan="3" style="background-color: rgb(87, 115, 207);">CS 2550 Web Programming 1 (asynchronous online)</td>
+                    <td id="odd-row"></td>
+                    <td rowspan="3" style="background-color: rgb(87, 115, 207);">CS 2550 Web Programming 1 (asynchronous online)</td>
+                    <td id="odd-row"></td>
+                </tr>
+                <tr>
+                    <td>1:00</td>
+                    <td rowspan="3" style="background-color: rgb(48, 129, 41);">ECE 3710 Prob and Stat</td>
+                    <td id="even-row"></td>
+                    <td rowspan="3" style="background-color: rgb(48, 129, 41);">ECE 3710 Prob and Stat</td>
+                </tr>
+                <tr>
+                    <td>1:30</td>
+                    <td id="odd-row"></td>
+                </tr>
+                <tr>
+                    <td>2:00</td>
+                    <td rowspan="3" style="background-color: rgb(206, 94, 94);">CS 2300 Discrete Math</td>
+                    <td id="even-row"></td>
+                    <td rowspan="3" style="background-color: rgb(206, 94, 94);">CS 2300 Discrete Math</td>
+        
+                </tr>
+                <tr>
+                    <td>2:30</td>
+                    <td id="odd-row"></td>
+                    <td id="odd-row"></td>
+                    <td id="odd-row"></td>
+                </tr>
+                <tr>
+                    <td>3:00</td>
+                    <td id="even-row"></td>
+                    <td id="even-row"></td>
+                    <td id="even-row"></td>
+                </tr>
+                <tr>
+                    <td>3:30</td>
+                    <td id="odd-row"></td>
+                    <td id="odd-row"></td>
+                    <td id="odd-row"></td>
+                    <td id="odd-row"></td>
+                    <td id="odd-row"></td>
+                </tr>
+                <tr>
+                    <td>4:00</td>
+                    <td id="even-row"></td>
+                    <td id="even-row"></td>
+                    <td id="even-row"></td>
+                    <td id="even-row"></td>
+                    <td id="even-row"></td>
+                </tr>
+                <tr>
+                    <td>4:30</td>
+                    <td rowspan="6" style="background-color: rgb(189, 155, 221);">Climbing Practice</td>
+                    <td rowspan="6" style="background-color: rgb(189, 155, 221);">Climbing Practice</td>
+                    <td rowspan="5" style="background-color: rgb(236, 164, 81);">CS 2420 Intro to Data Stuctures and Algorithms</td>
+                    <td id="odd-row"></td>
+                    <td rowspan="6" style="background-color: rgb(189, 155, 221);">Climbing Practice</td>
+                </tr>
+                <tr>
+                    <td>5:00</td>
+                    <td id="even-row"></td>
+                </tr>
+                <tr>
+                    <td>5:30</td>
+                    <td id="odd-row"></td>
+                </tr>
+                <tr>
+                    <td>6:00</td>
+                    <td id="even-row"></td>
+                </tr>
+                <tr>
+                    <td>6:30</td>
+                    <td id="odd-row"></td>
+                </tr>
+                <tr>
+                    <td>7:00</td>
+                    <td id="even-row"></td>
+                    <td id="even-row"></td>
+                </tr>
+            </table>
+        </div>
+        
     </div>
     <footer>
         Copyright @ 2020 Dalton Bunker
