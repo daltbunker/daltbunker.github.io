@@ -58,7 +58,7 @@ img {
  }
 
  .content-item h2 {
-     background-image: url("back1.png");
+     background-image: url("/images/back1.png");
      text-align: center;
      text-transform: uppercase;
      position: relative;
@@ -96,7 +96,6 @@ table {
 
 footer {
     color: white;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin: 10px;
     text-align: center;
 }
