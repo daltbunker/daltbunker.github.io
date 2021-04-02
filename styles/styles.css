@@ -2,11 +2,16 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-image:linear-gradient(#ffffff,#3a3a3a);
+.content-body {
+    background-image:linear-gradient(#ffffff,#998989);
+    background-size: 100%;
 }
 
-img {
+.main-content {
+    margin: 50px;
+}
+
+#profile-pic{
     height: 50%;
     background-position: left;
     background-repeat: no-repeat;
@@ -16,7 +21,6 @@ img {
     top: 10px;
     padding: 10px;
     margin: 20px;
-    z-index: -5;
 }
 
  h1 {
@@ -38,6 +42,7 @@ img {
      background-color: white;
      padding: 15px;
      margin: 20px -10px;
+     z-index: 99;
  }
  nav a {
     color: #3a3a3a;
@@ -59,12 +64,13 @@ img {
 
  .content-item h2 {
      background-image: url("/images/back1.png");
+     color: rgb(59, 59, 59);
      text-align: center;
      text-transform: uppercase;
      position: relative;
      padding-top: 4em;
      height: 100px;
-     z-index: -4;
+     margin: 30px 10px;
  }
 
 ul, ol, table, p, .poem-content {
@@ -95,7 +101,7 @@ table {
 }
 
 footer {
-    color: white;
-    margin: 10px;
+    color: black;
+    margin: 20px;
     text-align: center;
 }
