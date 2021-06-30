@@ -6,7 +6,6 @@ let modalId = document.getElementById("modal-content")
 var span = document.getElementsByClassName("close")[0];
 
 profilePic.onclick = function() {
-    console.log("clicked")
   modal.style.display = "block";
   modalId.style.display = "block";
 }
