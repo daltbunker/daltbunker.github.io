@@ -1,7 +1,8 @@
 
-let profilePic = document.getElementById("profile-pic");
-let modal = document.getElementById("modal");
-let modalId = document.getElementById("modal-content")
+const profilePic = document.getElementById("profile-pic");
+const modal = document.getElementById("modal");
+const modalId = document.getElementById("modal-content")
+
 
 var span = document.getElementsByClassName("close")[0];
 
