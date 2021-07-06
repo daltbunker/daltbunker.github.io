@@ -26,6 +26,10 @@
       margin-left: 300px;
       width: 50%;
   }
+
+#modal img:hover {
+      cursor: pointer;
+  }
   
   .close {
     color: #aaa;
@@ -189,4 +193,27 @@ h3 {
 
 .carousel-indicators {
     transform: translate(0%, 100%);
+}
+
+.bottom-content {
+    margin-bottom: 60px;
+}
+
+.bike, .hike, .climb {
+    display: none;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    transform: translate(100px, -180px);
+}
+
+.bike-col img, .climb-col img, .hike-col img {
+    transition: 400ms;
+}
+
+.img-cover {
+    height: 309px;
+    width: 300px;
 }
