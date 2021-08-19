@@ -195,6 +195,7 @@ h2 {
 }
 
 @media screen and (max-width: 1200px) {
+ 
     .img-cover {
         margin-bottom: 30px;
         margin-left: 20%;
@@ -223,13 +224,17 @@ h2 {
 
 @media screen and (max-width: 1100px) {
     .skill-title {
-        background-color: var(--dk-blue);
+        background-color: var(--md-gray);
     }
 }
 
 
 
 @media screen and (max-width: 770px) {
+    .skill-title {
+        font-size: 13px;
+    }
+
     .hike-col {
         display: flex;
     }
