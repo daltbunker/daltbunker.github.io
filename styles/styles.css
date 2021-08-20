@@ -203,6 +203,13 @@ h2 {
     margin-bottom: 130px;
 }
 
+.interests-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
 .bike, .hike, .climb {
     display: none;
     padding: 5px;
@@ -261,8 +268,7 @@ h2 {
     }
  
     .img-cover {
-        margin-bottom: 30px;
-        margin-left: 30%;
+        margin-bottom: 50px;
     }
 
     .img2 {
@@ -270,8 +276,9 @@ h2 {
     }
 
     .interests-container {
-        display: flex;
+        align-items: center;
         flex-direction: column;
+        justify-content:space-around;
     }
 }
 
@@ -288,7 +295,7 @@ h2 {
 @media screen and (max-width: 770px) {
 
     .head-content {
-        height: 50vh;
+        height: 60vh;
     }
 
     .skill-title {
@@ -322,10 +329,6 @@ h2 {
         max-height: 200px;
     }
 
-    .img-cover {
-        margin-left: 10%;
-    }
-
     nav a, .edu {
         font-size: 15px;
     }
@@ -341,7 +344,7 @@ h2 {
 
 
 @media screen and (max-width: 340px) {
-    
+
 }
 
 
