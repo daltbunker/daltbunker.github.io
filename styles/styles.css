@@ -8,9 +8,14 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.body {
+html, body {
+    overflow-x: hidden;
+}
+
+body {
     background-color: white;
     color: var(--dk-gray);
+    position: absolute;
 }
 
 .head-content {
@@ -48,6 +53,45 @@
      transition: 0.4s;
  }
 
+ .dropdown-nav {
+     display: none;
+     position: absolute;
+     top: 0;
+     left: 0;
+     margin-left: 30px;
+     margin-top: 10px;
+ }
+
+ #dropdown-btn{
+     font-size: 50px;
+     background: none;
+     border: none;
+     color: white;
+ }
+
+ .dropdown-items {
+     display: none;
+     position: absolute;
+     left: -30px;
+     top: 80px;
+     width: 150px;
+ }
+
+ .dropdown-items a {
+     padding: 10px;
+     background-color: var(--dk-gray);
+     text-decoration: none;
+     font-size: 25px;
+     color: rgb(255, 255, 255);
+     display: flex;
+ }
+
+ .dropdown-items a:hover {
+     color: black;
+     background-color: white;
+     transition: 0.4s;
+ }
+
 .about-wrap {
     background-color: var(--dk-gray);
     padding-top: 60px;
@@ -69,7 +113,7 @@ h2 {
 
  .major-col, .school-col, .year-col {
     background-color: white;
-    color: black;
+    color: var(--dk-gray);
 
 }
 
@@ -152,7 +196,6 @@ h2 {
 
 .carousel-indicators {
     transform: translate(0%, 100%);
-    color: black;
 }
 
 .interests-wrap {
@@ -179,6 +222,11 @@ h2 {
     width: 300px;
 }
 
+#hike-img img {
+    height: 309px;
+    width: 300px;
+}
+
 .footer {
     padding: 15px 0;
     background-color: var(--dk-gray);
@@ -197,28 +245,33 @@ h2 {
 }
 
 @media screen and (max-width: 1200px) {
+
+    .title {
+        font-size: 28px;
+        background-color: var(--dk-gray);
+        padding-bottom: 20px;
+    }
+
+    .dropdown-nav {
+        display: block
+    }
+
+    nav {
+        display: none;
+    }
  
     .img-cover {
         margin-bottom: 30px;
-        margin-left: 20%;
-    }
-
-    .hike-col {
-        display: none;
+        margin-left: 30%;
     }
 
     .img2 {
         display: none;
     }
 
-    #profile-pic {
-        width: 50%;
-        min-height: 200px;
-    }
-
-    h1 {
-        top: 35%;
-        margin-bottom: 30px;
+    .interests-container {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -233,22 +286,37 @@ h2 {
 
 
 @media screen and (max-width: 770px) {
+
+    .head-content {
+        height: 50vh;
+    }
+
     .skill-title {
-        font-size: 13px;
-    }
-
-    .hike-col {
-        display: flex;
-    }
-
-    h1 {
-        top: 20%;
+        font-size: 13px; 
     }
 }
 
 
 
 @media screen and (max-width: 500px) {
+    .title {
+        font-size: 20px;
+        padding-left: 40px;
+    }
+
+    #dropdown-btn {
+        font-size: 40px;
+    }
+
+    .dropdown-items {
+        top: 60px;
+    }
+
+    .dropdown-items a{
+        font-size: 20px;
+        width: 120px;
+    }
+
     .projectImg {
         max-width: 300px;
         max-height: 200px;
@@ -258,7 +326,7 @@ h2 {
         margin-left: 10%;
     }
 
-    nav a {
+    nav a, .edu {
         font-size: 15px;
     }
 
@@ -269,8 +337,25 @@ h2 {
     #carousel-container {
         height: 480px;
     }
+}
 
-    .edu {
-        font-size: 15px;
+
+@media screen and (max-width: 340px) {
+    
+}
+
+
+@media screen and (max-height: 700px) {
+    .title {
+        font-size: 28px;
+        background-color: var(--dk-gray);
+        padding-bottom: 20px;
+    }
+    .dropdown-nav {
+        display: block
+    }
+
+    nav {
+        display: none;
     }
 }
