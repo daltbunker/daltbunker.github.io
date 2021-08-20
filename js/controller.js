@@ -12,9 +12,29 @@ const hikeCover = document.querySelector(".hike-col img");
 
 const imgCover = document.querySelectorAll(".img-cover");
 
+const dropdownBtn = document.getElementById("dropdown-btn")
+const dropdownItems = document.getElementsByClassName("dropdown-items")[0]
+const dropdownLinks = document.getElementsByClassName("dropdown-links")
+
 
 
 function onPageLoad(){
+
+    dropdownBtn.onclick = function() {
+        if (dropdownItems.style.display == "block") {
+            dropdownItems.style.display = "none"
+        }
+        else {
+            dropdownItems.style.display = "block"
+        }
+    }
+
+    for (let link of dropdownLinks) {
+        link.onclick = function() {
+            dropdownItems.style.display = "none"
+        }
+    }
+
     bikeImg.onmouseover = function() {
         onHover(bikeTitle, bikeCover, 0);
     }
@@ -34,7 +54,6 @@ function onPageLoad(){
         onLeave(hikeTitle, hikeCover, 2);
     }
 }
-
 
 function onHover(title, cover, elem){
   imgCover[elem].style.backgroundColor = "black";
