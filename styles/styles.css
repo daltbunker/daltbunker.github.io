@@ -316,10 +316,6 @@ h2 {
     .head-content {
         height: 60vh;
     }
-
-    .skill-title {
-        /* font-size: 13px;  */
-    }
 }
 
 
@@ -352,20 +348,10 @@ h2 {
         font-size: 15px;
     }
 
-    .skill-title {
-        /* font-size: 10px; */
-    }
-
     #carousel-container {
         height: 480px;
     }
 }
-
-
-@media screen and (max-width: 340px) {
-
-}
-
 
 @media screen and (max-height: 700px) {
     .title {
