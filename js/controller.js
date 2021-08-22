@@ -16,7 +16,21 @@ const dropdownBtn = document.getElementById("dropdown-btn")
 const dropdownItems = document.getElementsByClassName("dropdown-items")[0]
 const dropdownLinks = document.getElementsByClassName("dropdown-links")
 
+const progressBars = document.querySelectorAll('.progress-bar')
 
+
+let loadInt = setInterval(loadBar, 30)
+function loadBar() {
+    var position = progressBars[0].getBoundingClientRect()
+    if (position.top < 500) {
+        clearInterval(loadInt)
+        let animationVal = 1
+        for (let bar of progressBars) {
+            bar.style.animation = `animation-${animationVal} 3s forwards`
+            animationVal ++
+        }
+    }
+}
 
 function onPageLoad(){
 
