@@ -1,0 +1,199 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  background-color: rgb(255, 251, 218);
+  margin: 20px;
+  padding: 0;
+}
+
+/* #region GENERIC*/
+.align-left {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: 3px solid black;
+  background-color: transparent;
+  font-size: 1.5em;
+  padding: 3px 6px;
+  text-transform: uppercase;
+  border-radius: 1px;
+  font-weight: 200;
+  transition: 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.323);
+}
+
+p {
+  max-width: 800px; 
+  font-size: 1.6em;
+}
+
+h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 200;
+}
+
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 200; 
+}
+
+.main-container {
+  margin: 0 20px;
+}
+
+.main-section {
+  height: calc(100vh - 75px);
+  padding-top: 125px;
+}
+
+.section-image {
+  height: 400px;
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* #endregion GENERIC */
+
+/* #region NAV */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: rgb(255, 251, 218);
+  z-index: 5;
+  padding: 20px;
+  width: 100%;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  color: rgb(255, 251, 218);
+  font-size: 1.3em;
+  text-transform: uppercase;
+  margin: 0 20px;
+  padding-bottom: 4px;
+}
+
+nav a::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: rgb(255, 251, 218);
+  content: '';
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: 0.2s;
+}
+
+nav a:hover::before {
+  transform: scaleY(1);
+}
+/* #endregion NAV */
+
+/* #region HOME */
+.web-dev-text {
+  font-size: 16em;
+  color: rgba(0, 0, 0, 0.323);
+  text-transform: capitalize;
+}
+/* #endregion HOME */
+
+/* #region PROJECTS */
+#projects li {
+  display: flex;
+}
+
+#projects img {
+  height: 100px;
+}
+
+.project-right-scroll, .project-left-scroll {
+  border-radius: 50%;
+  padding-bottom: 8px;
+  font-size: 2em;
+}
+
+.project-left-scroll {
+  visibility: hidden;
+  padding-left: 21px;
+  padding-right: 24px;
+}
+
+.project-right-scroll {
+  padding-left: 24px;
+  padding-right: 21px; 
+}
+
+.project-count {
+  font-size: 0.8em;
+}
+/* #endregion PROJECTS */
+
+/* #region CONTACT */
+#contact form input, #contact form textarea {
+  font-size: 1.5em;
+}
+/* #endregion CONTACT */

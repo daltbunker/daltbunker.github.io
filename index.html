@@ -7,134 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <title>Dalton Bunker</title>
-    <link href="styles/styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="content-body">
-        <div class="head-content">
-            <div class="title">DALTON BUNKER</div>
-            <nav>
-                <a href="#about-id">About</a>
-                <a href="#skills-content">Skills</a>
-                <a href="#projects-id">Projects</a>
-                <a href="#interests-id">Interests</a>
-            </nav>
-            <div class="dropdown-nav">
-                <button id="dropdown-btn">&equiv;</button>
-                <div class="dropdown-items">
-                    <a class="dropdown-links" href="#about-id">About</a>
-                    <a class="dropdown-links" href="#skills-content">Skills</a>
-                    <a class="dropdown-links" href="#projects-id">Projects</a>
-                    <a class="dropdown-links" href="#interests-id">Interests</a>
-                </div>
+    <nav>
+      <a href="#home">home</a>
+      <a href="#projects">projects</a>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div class="main-container">
+      <div class="main-section column" style="align-items: center" id="home">
+        <div class="row" style="column-gap: 100px;">
+          <div class="web-dev-text">web</div>
+          <div class="row" style="align-items: center;">
+            <img class="section-image" src="./assets/portrait.png" alt="">
+            <div style="font-size: 1.8em; font-weight: 200; margin: 0px 0px 30px 20px;">
+              Hello, My Name Is<br>Dalton Bunker
             </div>
-            
-        </div> 
-        <div class="main-content">
-            <div class="content-item about-wrap" id="about-id">
-                <h2 class="lt-h2">About</h2>
-                <div class="container personal-info">
-                    <div class="row">
-                        <div class="col major-col text-center">
-                            Major
-                        </div>
-                        <div class="col year-col text-center">
-                            Year
-                        </div>
-                        <div class="col school-col text-center">
-                            School
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col cs-col edu">Computer Science</div>
-                        <div class="col sft-col edu">Junior</div>
-                        <div class="col uvu-col edu">Utah Valley University</div>
-                    </div>
-                </div>
-            </div>
-            <div class="content-item skills-wrap" id="skills-content">
-                <h2 class="dk-h2" id="skills-id">Skills</h2>
-                <div class="skills-row">
-                    <div class="progress-bar"><span>Python</span></div>   
-                </div>
-                <div class="skills-row">
-                    <div class="progress-bar"><span>Javascript</span></div>
-                </div>
-                <div class="skills-row">
-                    <div class="progress-bar"><span>CSS/HTML</span></div>
-                </div>
-                <div class="skills-row">
-                    <div class="progress-bar"><span>Bootsrap</span></div>
-                </div>
-                <div class="skills-row">
-                    <div class="progress-bar"><span>Swift/React</span></div>
-                </div>
-            </div>
-            <div class="content-item project-wrap" id="carousel-container">
-                <h2 class="lt-h2" id="projects-id">Projects</h2>
-                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner"></div>
-                        <div class="carousel-item text-center calc-wrap">
-                            <img src="/images/calc.png" alt="graph" class="projectImg"><img src="/images/calc_2.png" alt="graph 2" class="img2">
-                            <div class="project-title text-center project-content">React</div>
-                        </div>
-                        <div class="carousel-item active text-center">
-                            <img src="/images/movie_home.png" alt="movie home" class="projectImg"><img src="/images/movie_form.png" alt="movie form" class="img2">
-                            <div class="project-title text-center project-content">Javascript, CSS, HTML</div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="/images/interval_timer.png" alt="interval home" class="projectImg"><img src="/images/interval_2.png" alt="interval form" class="img2">                        
-                            <div class="project-title text-center project-content">Javascript, CSS, HTML</div>
-                        </div>
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                </div>
-                
-            </div>
-            <div class="content-item interests-wrap">
-                <h2 class="dk-h2" id="interests-id">Personal Interests</h2>
-                <div class="container">
-                    <div class="interests-container">
-                        <div class="bike-col">
-                            <div class="img-cover" id="bike-img">
-                                <img src="/images/biking.JPG" alt="">
-                                <div class="bike h3 text-center">Bike</div>
-                            </div>
-                        </div>
-                        <div class="climb-col">
-                            <div class="img-cover" id="climb-img">
-                                <img src="/images/wolfpoint.jpg" alt="">
-                                <div class="climb h3 text-center">Climb</div>
-                            </div>
-                        </div>
-                        <div class="hike-col">
-                            <div class="img-cover" id="hike-img">
-                                <img src="/images/hiking-2.jpg" alt="">
-                                <div class="hike h3 text-center">Hike</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer text-center">
-                <a href="#">&uarr;</a>
-            </div>
+          </div>
+        </div>
+        <div class="web-dev-text">developer</div>
+      </div>
+      <div class="main-section" id="projects">
+        <h2>projects</h2>
+        <div class="row center" style="justify-content: space-evenly;">
+          <button class="project-left-scroll">&#8249;</button>
+          <div class="project column center"></div>
+          <button class="project-right-scroll">&#8250;</button>
+        </div>
+      </div>
+      <div class="main-section" id="about">
+        <h2>about</h2>
+        <div class="row" style="justify-content: space-between; max-width: 1400px;">
+          <p>
+            I am a full stack web developer based in Salt Lake City,
+            committed to creating clean and efficient web applications.
+            <br><br>
+            I started my coding path in university but that came to a halt
+            after watching my natuaral joy for learning get plagued by the
+            stress of grades and due dates. To continue my education I took
+            up VSchool's bootcamp. Shortly thereafter I found my self
+            doing frontend development for Delta Airlines and have since
+            expanded my responsibilities to fullstack.
+            <br><br>
+            Outside of coding, I enjoy rock climbing and traveling (for climbing).
+            The limestone and bakeries of France are two things I live most for.
+          </p>
+          <div>
+            <img style="height: 500px;" src="./assets/lust.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="main-section" id="contact">
+        <h2>contact</h2>
+        <form id="contactForm" class="column" style="max-width: 600px; row-gap: 8px; margin-top: 30px;">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text">
+          <label for="message">Message*</label>
+          <textarea required id="message" name="message" rows="8" cols="33"></textarea>
+          <button id="sendBtn" style="margin-top: 10px;">send</button>
+        </form>
+      </div>
     </div>
-    <script src="/js/controller.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
