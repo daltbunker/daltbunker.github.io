@@ -76,7 +76,7 @@ function setProject(project) {
       link.rel = "noreferrer noopener";
       const img = document.createElement('img');
       img.src = src;
-      img.style.height = '30px';
+      img.style.height = '23px';
       link.appendChild(img);
       return link;
     }
