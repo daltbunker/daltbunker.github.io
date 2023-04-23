@@ -79,6 +79,10 @@ h3 {
   height: 280px;
 }
 
+.mobile {
+  display: none;
+}
+
 .fade-out {
   animation-name: fadeOut;
   animation-duration: 300ms;
@@ -154,10 +158,22 @@ nav a:hover::before {
 /* #endregion NAV */
 
 /* #region HOME */
+
+#home {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 39% 45%;
+  column-gap: 40px;
+}
+
 .web-dev-text {
   font-size: 16em;
   color: rgba(0, 0, 0, 0.323);
   text-transform: capitalize;
+}
+
+.web-dev-text:last-child {
+  grid-column: 1/3;
 }
 /* #endregion HOME */
 
@@ -166,18 +182,23 @@ nav a:hover::before {
   display: flex;
 }
 
+#projects ul {
+  padding-left: 0;
+}
+
 #projects img {
   height: 70px;
 }
 
 #projects p {
-  height: 168px;
+  height: 200px;
 }
 
 .project-right-scroll, .project-left-scroll {
   border-radius: 50%;
   padding-bottom: 8px;
   font-size: 27px;
+  transform: scale(0.8);
 }
 
 .project-left-scroll {
@@ -210,25 +231,105 @@ nav a:hover::before {
 
 
 @media screen and (max-width: 1100px) {
+  body {
+    font-size: 13px;
+  }
+  #home {
+    grid-template-columns: 35% 55%;
+    grid-template-rows: 45% 25%; 
+  }
   .web-dev-text {
     font-size: 12em;
+  }
+  #projects p {
+    height: 150px;
   }
   .section-image {
     height: 190px;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  body {
-    font-size: 13px;
-  }
-}
-
 @media screen and (max-width: 900px) {
+  #home {
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 45% 15%; 
+  }
+  .web-dev-text {
+    font-size: 11em;
+  }
+  .project-left-scroll, .project-right-scroll {
+    transform: scale(0.6);
+  }
   #about p {
     max-width: 400px;
   }
   .about-img {
     height: 320px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  p {
+    width: 330px;
+    font-size: 1.1em;
+  }
+  #home {
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 35%; 
+    justify-items: center;
+  }
+  .portrait-container {
+    grid-row: 2;
+  }
+  .web-dev-text {
+    font-size: 4.5em;
+    grid-row: 1; 
+  }
+  #projects img {
+    height: 40px;
+  }
+  #projects p {
+    height: 120px;
+  }
+  #about .row {
+    flex-direction: column;
+  }
+  .about-img-container {
+    text-align: center;
+  }
+  .about-img {
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 8px;
+  }
+  p {
+    width: 200px;
+  }
+  .web-dev-text {
+    font-size: 5em;
+  }
+  #home {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 45%; 
+    justify-items: center;
+  }
+  #projects p {
+    height: 100px;
+  }
+  .project-left-scroll, .project-right-scroll {
+    transform: scale(0.5);
+  }
+  .about-img {
+    height: 180px;
   }
 }
