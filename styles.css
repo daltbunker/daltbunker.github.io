@@ -32,8 +32,9 @@ body {
 }
 
 button {
-  border: 3px solid black;
+  border: 1px solid black;
   background-color: transparent;
+  color: black;
   font-size: 1.5em;
   padding: 3px 6px;
   text-transform: uppercase;
@@ -313,7 +314,11 @@ nav a:hover::before {
     font-size: 8px;
   }
   p {
-    width: 200px;
+    width: 220px;
+    font-size: 2em;
+  }
+  nav a {
+    margin: 0 10px;
   }
   .web-dev-text {
     font-size: 5em;
@@ -324,10 +329,13 @@ nav a:hover::before {
     justify-items: center;
   }
   #projects p {
-    height: 100px;
+    height: 230px;
   }
   .project-left-scroll, .project-right-scroll {
     transform: scale(0.5);
+  }
+  #about {
+    height: unset;
   }
   .about-img {
     height: 180px;
