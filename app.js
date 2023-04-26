@@ -19,7 +19,7 @@ const PROJECTS = [
   {
     name: 'soul climbers',
     github: 'https://github.com/daltbunker/climbing_log_service',
-    website: 'https://soulcimbers.com',
+    website: 'https://climbing-log-client.onrender.com/',
     description: `Soul Climbers is a tool and hub for "pure" rock climbers. Users can explore news articles,
     search for climbs, and log their ascents without the hastle of gym bros and jaded trad dads. Other
     popular sites tend to only distract from the beauty and truths or rock climbing. As a recent converted
