@@ -72,7 +72,7 @@ h3 {
 }
 
 .main-section {
-  height: calc(100vh - 75px);
+  min-height: calc(100vh - 75px);
   padding-top: 90px;
 }
 
@@ -82,38 +82,6 @@ h3 {
 
 .mobile {
   display: none;
-}
-
-.fade-out {
-  animation-name: fadeOut;
-  animation-duration: 300ms;
-  animation-iteration-count: 1;
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-.fade-in {
-  animation-name: fadeIn;
-  animation-duration: 300ms;
-  animation-iteration-count: 1;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 /* #endregion GENERIC */
 
@@ -195,26 +163,13 @@ nav a:hover::before {
   height: 200px;
 }
 
-.project-right-scroll, .project-left-scroll {
-  border-radius: 50%;
-  padding-bottom: 8px;
-  font-size: 27px;
-  transform: scale(0.8);
+#projects h2 {
+  margin-bottom: 30px;
 }
 
-.project-left-scroll {
-  visibility: hidden;
-  padding-left: 17px;
-  padding-right: 19px;
-}
-
-.project-right-scroll {
-  padding-left: 19px;
-  padding-right: 17px; 
-}
-
-.project-count {
-  font-size: 0.8em;
+.project {
+  border: 3px solid black;
+  padding: 30px;
 }
 /* #endregion PROJECTS */
 
@@ -230,6 +185,11 @@ nav a:hover::before {
 }
 /* #endregion CONTACT */
 
+@media screen and (max-width: 1300px) {
+  #projects > div {
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 1100px) {
   body {
@@ -257,9 +217,6 @@ nav a:hover::before {
   }
   .web-dev-text {
     font-size: 11em;
-  }
-  .project-left-scroll, .project-right-scroll {
-    transform: scale(0.6);
   }
   #about p {
     max-width: 400px;
@@ -303,6 +260,7 @@ nav a:hover::before {
   }
   .about-img-container {
     text-align: center;
+    margin-top: 30px;
   }
   .about-img {
     height: 220px;
@@ -312,6 +270,7 @@ nav a:hover::before {
 @media screen and (max-width: 500px) {
   body {
     font-size: 8px;
+    margin: 10px;
   }
   p {
     width: 220px;
@@ -321,18 +280,19 @@ nav a:hover::before {
     margin: 0 10px;
   }
   .web-dev-text {
-    font-size: 5em;
+    font-size: 7em;
   }
   #home {
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 45%; 
+    grid-template-rows: 25% 50%; 
     justify-items: center;
   }
   #projects p {
-    height: 230px;
+    height: 170px;
+    width: 90%;
   }
-  .project-left-scroll, .project-right-scroll {
-    transform: scale(0.5);
+  .project {
+    padding: 20px;
   }
   #about {
     height: unset;
@@ -341,3 +301,7 @@ nav a:hover::before {
     height: 180px;
   }
 }
+
+@media screen and (max-width: 450px) { #projects p { height: 190px; } }
+@media screen and (max-width: 400px) { #projects p { height: 220px; } }
+@media screen and (max-width: 350px) { #projects p { height: 260px; } }
