@@ -2,161 +2,169 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <title>Dalton Bunker</title>
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <title>Dalton Bunker</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-      <a href="#home">home</a>
-      <a href="#projects">projects</a>
-      <a href="#about">about</a>
-      <a href="#contact">contact</a>
-    </nav>
-    <div class="main-container">
-      <div class="main-section column" style="align-items: center" id="home">
-        <div class="web-dev-text mobile">web developer</div>
-        <div class="web-dev-text desktop">web</div>
-        <div class="row portrait-container" style="align-items: center;">
-          <img class="section-image" src="./assets/portrait.png" alt="">
-          <div style="font-size: 1.8em; font-weight: 200; margin: 0px 0px 30px 20px;">
-            Hello, My Name<br> is Dalton Bunker
-          </div>
-        </div>
-        <div class="web-dev-text desktop">developer</div>
-      </div>
-      <div class="main-section" id="projects">
-        <h2>projects</h2>
-        <div class="row center" style="justify-content: space-evenly; row-gap: 30px; flex-wrap: wrap;">
-          <div class="project column center">
-            <div class="row center" style="column-gap: 20px;">
-              <h3>Soul Climbers</h3>
-              <a href="https://github.com/daltbunker/climbing_log_service" target="_blank" rel="noreferrer noopener">
-                <img src="./assets/github.png" alt="" style="height: 23px;">
-              </a>
-              <a href="https://soulclimbers.org/" target="_blank" rel="noreferrer noopener">
-                <img src="./assets/link.webp" alt="" style="height: 23px;">
-              </a>
-            </div>
-            <p>
-              Soul Climbers is a tool and hub for "pure" rock climbers. Users can explore news articles,
-              search for climbs, and log their ascents without the hastle of gym bros and jaded trad dads. Other
-              popular sites tend to only distract from the beauty and truths or rock climbing. As a recent converted
-              soul climber, this is my way of giving back. <i>(Java, MySQL, Angular)</i>
-            </p>
-            <ul class="row" style="column-gap: 50px;">
-              <li class="column center">
-                <img src="./assets/java.png" alt="">
-              </li>
-              <li class="column center">
-                <img src="./assets/angular.png" alt="">
-              </li>
-              <li class="column center">
-                <img src="./assets/mysql.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="project column center">
-            <div class="row center" style="column-gap: 20px;">
-              <h3>Chat Server</h3>
-              <a href="https://github.com/daltbunker/go_websocket" target="_blank" rel="noreferrer noopener">
-                <img src="./assets/github.png" alt="" style="height: 23px;">
-              </a>
-            </div>
-            <p>
-              This api can be used to spin up concurrent sockets to allow for asyncrhonous
-              communication between users. I built this project as a sort of playground
-              to explore the WebSocket protocol and the popular concurrency
-              features of go. <i>(Go)</i>
-            </p>
-            <ul class="row" style="column-gap: 50px;">
-              <li class="column center">
-                <img src="./assets/go.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="project column center">
-            <div class="row center" style="column-gap: 20px;">
-              <h3>Task Assistant</h3>
-              <a href="https://github.com/daltbunker/vs-projects/tree/main/code_task_manager" target="_blank" rel="noreferrer noopener">
-                <img src="./assets/github.png" alt="" style="height: 23px;">
-              </a>
-            </div>
-            <p>
-              A tool to help manage your coding projects and stay organized. Create tasks with different
-              priorities and see where you're spending the most time. Explore data visulations built with D3.js. <i>(React, Node, MongoDB)</i>
-            </p>
-            <ul class="row" style="column-gap: 50px;">
-              <li class="column center">
-                <img src="./assets/react.png" alt="">
-              </li>
-              <li class="column center">
-                <img src="./assets/node.png" alt="">
-              </li>
-              <li class="column center">
-                <img src="./assets/mongodb.png" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="project column center">
-            <div class="row center" style="column-gap: 20px;">
-              <h3>Portfolio</h3>
-              <a href="https://github.com/daltbunker/daltbunker.github.io" target="_blank" rel="noreferrer noopener">
-                <img src="./assets/github.png" alt="" style="height: 23px;">
-              </a>
-            </div>
-            <p>
-              A simple app built with vanilla javascript. In a modern world where
-              languages and libraries are coming out faster than I can say hello world, I thought it would be fun
-              to go back to the basics. I like to understand how my tools work and have always had a natural
-              curiousity for seeing what's under the hood. <i>(Javascript)</i>
-            </p>
-            <ul class="row" style="column-gap: 50px;">
-              <li class="column center">
-                <img src="./assets/js.png" alt="">
-              </li>
-            </ul>
-          </div>
+  <nav>
+    <a href="#home">home</a>
+    <a href="#projects">projects</a>
+    <a href="#about">about</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <div class="main-container">
+    <div class="main-section column" style="align-items: center" id="home">
+      <div class="web-dev-text mobile">web developer</div>
+      <div class="web-dev-text desktop">web</div>
+      <div class="row portrait-container" style="align-items: center;">
+        <img load="lazy" class="section-image" src="./assets/portrait.png" alt="">
+        <div style="font-size: 1.8em; font-weight: 200; margin: 0px 0px 30px 20px;">
+          Hello, My Name<br> is Dalton Bunker
         </div>
       </div>
-      <div class="main-section" id="about">
-        <h2>about</h2>
-        <div class="row about-p" style="justify-content: space-between; max-width: 1100px;">
+      <div class="web-dev-text desktop">developer</div>
+    </div>
+    <div class="main-section" id="projects">
+      <h2>projects</h2>
+      <div class="row center" style="justify-content: space-evenly; row-gap: 30px; flex-wrap: wrap;">
+        <div class="project column center">
+          <div class="row center" style="column-gap: 20px;">
+            <h3>Soul Climbers</h3>
+            <a href="https://github.com/daltbunker/climbing_log_service" target="_blank" rel="noreferrer noopener">
+              <img load="lazy" src="./assets/github.png" alt="" style="height: 23px;">
+            </a>
+            <a href="https://soulclimbers.org/" target="_blank" rel="noreferrer noopener">
+              <img load="lazy" src="./assets/link.webp" alt="" style="height: 23px;">
+            </a>
+          </div>
           <p>
-            I am a full stack web developer based in Salt Lake City,
-            committed to creating clean and efficient web applications.
-            <br><br>
-            I started my coding path in university but that came to a halt
-            after watching my natuaral joy for learning get plagued by the
-            stress of grades and due dates. To continue my education I took
-            up VSchool's bootcamp. Shortly thereafter I found my self
-            doing frontend development for Delta Airlines and have since
-            expanded my responsibilities to fullstack.
-            <br><br>
-            Outside of coding, I enjoy rock climbing and traveling (for climbing).
-            The limestone and bakeries of France are two things I live most for.
+            Soul Climbers is a tool and hub for "pure" rock climbers. Users can explore news articles,
+            search for climbs, and log their ascents without the hastle of gym bros and jaded trad dads. Other
+            popular sites tend to only distract from the beauty and truths or rock climbing. As a recent converted
+            soul climber, this is my way of giving back. <i>(Java, MySQL, Angular)</i>
           </p>
-          <div class="about-img-container">
-            <img class="about-img" src="./assets/lust.png" alt="">
-          </div>
+          <ul class="row" style="column-gap: 50px;">
+            <li class="column center">
+              <img load="lazy" src="./assets/java.png" alt="">
+            </li>
+            <li class="column center">
+              <img load="lazy" src="./assets/angular.png" alt="">
+            </li>
+            <li class="column center">
+              <img load="lazy" src="./assets/mysql.png" alt="">
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="main-section" id="contact">
-        <h2>contact</h2>
-        <form id="contactForm" class="column" style="max-width: 400px; row-gap: 8px; margin-top: 30px;">
-          <label for="subject">Subject</label>
-          <input id="subject" name="subject" type="text">
-          <label for="message">Message*</label>
-          <textarea required id="message" name="message" rows="8" cols="33"></textarea>
-          <button id="sendBtn" style="margin-top: 10px;">send</button>
-        </form>
+        <div class="project column center">
+          <div class="row center" style="column-gap: 20px;">
+            <h3>9a Database</h3>
+            <a href="https://github.com/daltbunker/9a-website" target="_blank" rel="noreferrer noopener">
+              <img load="lazy" src="./assets/github.png" alt="" style="height: 23px;">
+            </a>
+          </div>
+          <p>
+            Open source project to host all rock climbs graded 9a or harder. Built with GraphQL for simple and
+            customizable data access. React interface to explore data and sample api usage.
+            <i>(Postgres, GraphQL, React)</i>
+          </p>
+          <ul class="row" style="column-gap: 50px;">
+            <li class="column center">
+              <img load="lazy" src="./assets/graphql.png" alt="">
+            </li>
+            <li>
+              <img load="lazy" src="./assets/postgres.png" alt="">
+            </li>
+            <li>
+              <img load="lazy" src="./assets/react.png" alt="">
+            </li>
+            </li>
+          </ul>
+        </div>
+        <div class="project column center">
+          <div class="row center" style="column-gap: 20px;">
+            <h3>Task Assistant</h3>
+            <a href="https://github.com/daltbunker/vs-projects/tree/main/code_task_manager" target="_blank"
+              rel="noreferrer noopener">
+              <img load="lazy" src="./assets/github.png" alt="" style="height: 23px;">
+            </a>
+          </div>
+          <p>
+            A tool to help manage your coding projects and stay organized. Create tasks with different
+            priorities and see where you're spending the most time. Explore data visulations built with D3.js.
+            <i>(React, Node, MongoDB)</i>
+          </p>
+          <ul class="row" style="column-gap: 50px;">
+            <li class="column center">
+              <img load="lazy" src="./assets/react.png" alt="">
+            </li>
+            <li class="column center">
+              <img load="lazy" src="./assets/node.png" alt="">
+            </li>
+            <li class="column center">
+              <img load="lazy" src="./assets/mongodb.png" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="project column center">
+          <div class="row center" style="column-gap: 20px;">
+            <h3>Chat Server</h3>
+            <a href="https://github.com/daltbunker/go_websocket" target="_blank" rel="noreferrer noopener">
+              <img src="./assets/github.png" alt="" style="height: 23px;">
+            </a>
+          </div>
+          <p>
+            This api can be used to spin up concurrent sockets to allow for asyncrhonous
+            communication between users. I built this project as a sort of playground
+            to explore the WebSocket protocol and the popular concurrency
+            features of go. <i>(Go)</i>
+          </p>
+          <ul class="row" style="column-gap: 50px;">
+            <li class="column center">
+              <img src="./assets/go.png" alt="">
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <script src="./app.js"></script>
+    <div class="main-section" id="about">
+      <h2>about</h2>
+      <div class="row about-p" style="justify-content: space-between; max-width: 1100px;">
+        <p>
+          I am a full stack web developer based in Salt Lake City,
+          committed to creating clean and efficient web applications.
+          <br><br>
+          I started my coding path in university but that came to a halt
+          after watching my natuaral joy for learning get plagued by the
+          stress of grades and due dates. To continue my education I took
+          up VSchool's bootcamp. Shortly thereafter I found myself
+          doing frontend development for Delta Airlines and have since
+          expanded my responsibilities to fullstack.
+          <br><br>
+          Outside of coding, I enjoy rock climbing and traveling (for climbing).
+          The limestone and bakeries of France are two things I live most for.
+        </p>
+        <div class="about-img-container">
+          <img load="lazy" class="about-img" src="./assets/lust.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="main-section" id="contact">
+      <h2>contact</h2>
+      <form id="contactForm" class="column" style="max-width: 400px; row-gap: 8px; margin-top: 30px;">
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text">
+        <label for="message">Message*</label>
+        <textarea required id="message" name="message" rows="8" cols="33"></textarea>
+        <button id="sendBtn" style="margin-top: 10px;">send</button>
+      </form>
+    </div>
+  </div>
+  <script src="./app.js"></script>
 </body>
 
 </html>
